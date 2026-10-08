@@ -120,7 +120,7 @@ def build_event_players(event_url: str, standings_pages: list) -> dict:
         return [
             Player(
                 player = data["player_name"],
-                hero_name = data["player_name"],
+                hero_name = data["hero_name"],
                 event_name = data["event"].url,
                 round_standing = data["round_standing"],
                 player_event_id = str(player_id)
